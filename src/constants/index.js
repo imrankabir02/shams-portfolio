@@ -2,14 +2,27 @@ import project1 from "../assets/projects/bookStore.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
+import shamsImage from "../assets/picsvg.svg"
+
+export const NAV_ITEMS = [
+  'About', 
+  'Skills', 
+  'Projects', 
+  'Experience', 
+  'Educations',
+  // 'Contact Me'
+];
+
+
 
 export const MY_DETAILS = {
-  name: "Mridha Imran Kabir",
-  title: "Backend Developer",
-  company: "Phone Tech BD Ltd",
-  email: "imrankabir325@gmail.com",
+  name: "সরদার শামস মাহমুদ",
+  title: "Lecturer",
+  company: "নর্দান ইউনিভার্সিটি অব বিজনেজ এন্ড টেকনোলজি  খুলনা",
+  email: "example@gmail.com",
   phoneNo: "+880 1614 126 363",
   address: "M.A Bari St, Sonadanga, Khulna",
+  image: shamsImage
 };
 
 // export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;

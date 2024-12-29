@@ -2,7 +2,7 @@ import { PROJECTS } from "../constants";
 
 const Projects = () => {
     return (
-        <div id="projects" className="py-12 lg:py-20">
+        <div className="py-12 lg:py-20">
             <h1 className="mb-12 text-4xl font-semibold text-center text-white">Projects</h1>
             <div className="grid max-w-6xl gap-8 px-6 mx-auto md:grid-cols-2">
                 {PROJECTS.map((project, index) => (
