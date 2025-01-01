@@ -13,7 +13,13 @@ const Hero = () => {
                 {/* Main container */}
                 <div className="flex flex-col px-6 py-12 mx-auto lg:flex-row lg:items-center lg:justify-between max-w-7xl">
                     {/* Left side - Text content */}
-                    <div className="flex flex-col items-center mb-8 lg:items-start lg:w-1/2 lg:mb-0">
+                    <div className="flex flex-col items-center mb-8 lg:items-start lg:w-2/3 lg:mb-0">
+                        <h1 className="text-red-900 text-4xl">
+                            পড়াকে মুখস্থ নয়,<br /> 
+                            <span className=""> 
+                            বুঝে আত্মস্থ করতে হবে
+                            </span>
+                        </h1>
                         <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-center text-slate-800 lg:text-6xl lg:text-left lg:mt-16">
                             {MY_DETAILS.name}
                         </h1>
@@ -22,10 +28,10 @@ const Hero = () => {
                                 {MY_DETAILS.title}
                             </span>
                             <br />
-                            <a href="" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               className="font-sm">
+                            <a href=""
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-sm">
                                 {MY_DETAILS.company}
                             </a>
                         </span>
@@ -65,35 +71,35 @@ const Hero = () => {
 
                         {/* Social Links */}
                         <div className="flex items-center gap-6 text-3xl">
-                            <a href="https://www.linkedin.com/in/imrankabir02" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               className="transition-all duration-500 transform hover:text-sky-500 hover:scale-110 ">
+                            <a href="https://www.linkedin.com/in/imrankabir02"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-all duration-500 transform hover:text-sky-500 hover:scale-110 ">
                                 <FaLinkedin />
                             </a>
-                            <a href="https://www.github.com/imrankabir02" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               className="text-slate-700 transition-all duration-500 transform hover:text-slate-900 hover:scale-110">
+                            <a href="https://www.github.com/imrankabir02"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-slate-700 transition-all duration-500 transform hover:text-slate-900 hover:scale-110">
                                 <FaGithub />
                             </a>
-                            <a href="https://leetcode.com/u/imrankabir02/" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               className="transition-all duration-500 transform hover:text-yellow-500 hover:scale-110">
+                            <a href="https://leetcode.com/u/imrankabir02/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-all duration-500 transform hover:text-yellow-500 hover:scale-110">
                                 <SiLeetcode />
                             </a>
-                            <a href="https://www.hackerrank.com/profile/imrankabir02" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               className="transition-all duration-500 transform hover:text-green-500 hover:scale-110">
+                            <a href="https://www.hackerrank.com/profile/imrankabir02"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-all duration-500 transform hover:text-green-500 hover:scale-110">
                                 <SiHackerrank />
                             </a>
                         </div>
                     </div>
 
                     {/* Right side - Profile picture */}
-                    <div className="flex justify-center w-full pt-12 lg:w-1/2 lg:justify-end">
+                    <div className="flex justify-center w-full pt-12 lg:w-1/3 lg:justify-end">
                         <img
                             src={MY_DETAILS.image}
                             alt="Imran Kabir"

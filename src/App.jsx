@@ -6,6 +6,7 @@ import Skills from "./Components/Skills"
 import Educations from "./Components/Educations"
 import Footer from "./Components/Footer"
 import Projects from "./Components/Projects"
+import Moto from "./Components/Moto"
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       <div className="relative min-h-screen">
         {/* Main content */}
         <div className="container relative px-8 mx-auto">
-          <Navbar />
+          {/* <Navbar /> */}
+            <Moto />
           <main className="relative space-y-2 md:space-y-2">
             <div id="contactme" >
               <Hero />
