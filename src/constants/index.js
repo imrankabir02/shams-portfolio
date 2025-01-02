@@ -16,11 +16,11 @@ export const NAV_ITEMS = [
 
 
 export const MY_DETAILS = {
-  name: "সরদার শামস মাহমুদ",
-  title: "Lecturer",
-  company: "নর্দান ইউনিভার্সিটি অব বিজনেজ এন্ড টেকনোলজি  খুলনা",
-  email: "example@gmail.com",
-  phoneNo: "+880 1614 126 363",
+  name: "Shams Mahmud",
+  title: "B.Sc in CSE",
+  company: "Khulna University",
+  email: "info.shamsbd@gmail.com",
+  phoneNo: "+880 1682 705 119",
   address: "M.A Bari St, Sonadanga, Khulna",
   image: shamsImage
 };

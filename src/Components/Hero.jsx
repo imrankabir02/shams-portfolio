@@ -1,115 +1,93 @@
 import { MY_DETAILS } from "../constants";
-import profilePic from '../assets/Kabir.png';
-import { MdOutlineMailOutline } from "react-icons/md";
-import { MdPhone } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiLeetcode, SiHackerrank } from "react-icons/si";
+import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
+import { FaTelegram } from "react-icons/fa";
+import { SiFacebook } from "react-icons/si";
 
 const Hero = () => {
     return (
-        <div className="py-12 lg:py-20">
-            <div className="pb-12 border-b bg-white rounded-2xl">
-                {/* Main container */}
-                <div className="flex flex-col px-6 py-12 mx-auto lg:flex-row lg:items-center lg:justify-between max-w-7xl">
-                    {/* Left side - Text content */}
-                    <div className="flex flex-col items-center mb-8 lg:items-start lg:w-2/3 lg:mb-0">
-                        <h1 className="text-red-900 text-4xl">
-                            পড়াকে মুখস্থ নয়,<br /> 
-                            <span className=""> 
-                            বুঝে আত্মস্থ করতে হবে
-                            </span>
-                        </h1>
-                        <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-center text-slate-800 lg:text-6xl lg:text-left lg:mt-16">
-                            {MY_DETAILS.name}
-                        </h1>
-                        <span className="block mt-6 text-3xl font-medium tracking-tight text-center lg:text-4xl lg:text-left">
-                            <span className="text-3xl text-slate-700">
-                                {MY_DETAILS.title}
-                            </span>
-                            <br />
-                            <a href=""
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="font-sm">
-                                {MY_DETAILS.company}
-                            </a>
-                        </span>
+        <div className="py-12 bg-gradient-to-br from-slate-50 via-white to-slate-50">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="relative">
+                    {/* Background Decorative Elements */}
+                    <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
+                    <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
 
-                        {/* Contact Information */}
-                        <p className="max-w-xl py-6 text-lg leading-relaxed text-center text-slate-700 lg:text-left">
-                            <div className="p-6 space-y-6 transition-all duration-500 transform rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
-                                {/* Email */}
-                                <div className="flex items-center gap-4">
-                                    <MdOutlineMailOutline className="text-2xl text-gray-600" />
+                    {/* Main Content */}
+                    <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+                        <div className="flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-12">
+                            {/* Profile Image Section */}
+                            <div className="lg:w-1/3 relative">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-rose-500/10 rounded-2xl"></div>
+                                <img
+                                    src={MY_DETAILS.image}
+                                    alt={MY_DETAILS.name}
+                                    className="relative w-full  object-cover rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform duration-300"
+                                />
+                            </div>
+
+                            {/* Content Section */}
+                            <div className="lg:w-2/3 space-y-8">
+                                {/* Bengali Quote */}
+                                <div className="space-y-2 bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl">
+                                    <h2 className="text-2xl lg:text-3xl font-medium bg-gradient-to-r from-rose-600 to-red-600 bg-clip-text text-transparent">
+                                        পড়াকে মুখস্থ নয়,
+                                    </h2>
+                                    <h2 className="text-2xl lg:text-3xl font-medium bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                                        বুঝে আত্মস্থ করতে হবে
+                                    </h2>
+                                </div>
+
+                                {/* Name and Title */}
+                                <div className="space-y-3">
+                                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight">
+                                        {MY_DETAILS.name}
+                                    </h1>
+                                    <div className="space-y-1">
+                                        <p className="text-xl text-gray-700">{MY_DETAILS.title}</p>
+                                        <p className="text-lg text-gray-600">{MY_DETAILS.company}</p>
+                                    </div>
+                                </div>
+
+                                {/* Contact Information */}
+                                <div className="flex flex-col gap-4">
                                     <a
                                         href={`mailto:${MY_DETAILS.email}`}
-                                        className="texthover"
+                                        className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors group"
                                     >
+                                        <span className="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                                            <MdOutlineMailOutline className="text-xl" />
+                                        </span>
                                         {MY_DETAILS.email}
                                     </a>
-                                </div>
-
-                                {/* Phone */}
-                                <div className="flex items-center gap-4">
-                                    <MdPhone className="text-2xl text-gray-600" />
                                     <a
                                         href={`tel:${MY_DETAILS.phoneNo}`}
-                                        className="texthover"
+                                        className="flex items-center gap-3 text-gray-600 hover:text-green-600 transition-colors group"
                                     >
+                                        <span className="p-2 bg-green-50 rounded-lg group-hover:bg-green-100 transition-colors">
+                                            <MdPhone className="text-xl" />
+                                        </span>
                                         {MY_DETAILS.phoneNo}
                                     </a>
+                                    {/* <div className="flex items-center gap-3 text-gray-600 group">
+                                        <span className="p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100 transition-colors">
+                                            <FaLocationDot className="text-xl" />
+                                        </span>
+                                        {MY_DETAILS.address}
+                                    </div> */}
                                 </div>
-
-                                {/* Address */}
-                                <div className="flex items-center gap-4">
-                                    <FaLocationDot className="text-2xl text-gray-600" />
-                                    <span className="text-lg text-slate-700">{MY_DETAILS.address}</span>
+                                <div className="flex items-center gap-6 text-3xl">
+                                    <h1>
+                                        Social:
+                                    </h1>
+                                    <a href="https://www.facebook.com/yourPhysicsAssistant?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-blue-600 transition-all duration-500 transform hover:text-blue-400 hover:scale-110">
+                                        <SiFacebook />
+                                    </a>
+                                    <a href="https://t.me/AcademictoAdmissionRoadmap" target="_blank" rel="noopener noreferrer" className="text-blue-600 transition-all duration-500 transform hover:text-blue-400 hover:scale-110">
+                                        <FaTelegram />
+                                    </a>
                                 </div>
                             </div>
-                        </p>
-
-                        {/* Social Links */}
-                        <div className="flex items-center gap-6 text-3xl">
-                            <a href="https://www.linkedin.com/in/imrankabir02"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition-all duration-500 transform hover:text-sky-500 hover:scale-110 ">
-                                <FaLinkedin />
-                            </a>
-                            <a href="https://www.github.com/imrankabir02"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-slate-700 transition-all duration-500 transform hover:text-slate-900 hover:scale-110">
-                                <FaGithub />
-                            </a>
-                            <a href="https://leetcode.com/u/imrankabir02/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition-all duration-500 transform hover:text-yellow-500 hover:scale-110">
-                                <SiLeetcode />
-                            </a>
-                            <a href="https://www.hackerrank.com/profile/imrankabir02"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition-all duration-500 transform hover:text-green-500 hover:scale-110">
-                                <SiHackerrank />
-                            </a>
                         </div>
-                    </div>
-
-                    {/* Right side - Profile picture */}
-                    <div className="flex justify-center w-full pt-12 lg:w-1/3 lg:justify-end">
-                        <img
-                            src={MY_DETAILS.image}
-                            alt="Imran Kabir"
-                            className="object-cover  transition-all duration-500 transform rounded-3xl hover:scale-105 xl:w-max xl:h-max"
-                        />
-                        {/* <img
-                            src={profilePic}
-                            alt="Imran Kabir"
-                            className="object-cover w-48 h-48 transition-all duration-500 transform rounded-3xl hover:scale-105 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-max xl:h-max"
-                        /> */}
                     </div>
                 </div>
             </div>

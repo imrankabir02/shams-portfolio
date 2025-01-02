@@ -7,6 +7,7 @@ import Educations from "./Components/Educations"
 import Footer from "./Components/Footer"
 import Projects from "./Components/Projects"
 import Moto from "./Components/Moto"
+import Course from "./Components/Course"
 
 const App = () => {
   return (
@@ -21,21 +22,21 @@ const App = () => {
             <div id="contactme" >
               <Hero />
             </div>
-            <div id="about">
+            {/* <div id="about">
               <About />
-            </div>
+            </div> */}
             <div id="skills">
-              <Skills />
+              <Course />
             </div>
-            <div id="projects">
+            {/* <div id="projects">
               <Projects />
-            </div>
-            <div id="experience">
+            </div> */}
+            {/* <div id="experience">
               <Experience />
-            </div>
-            <div id="educations" >
+            </div> */}
+            {/* <div id="educations" >
               <Educations />
-            </div>
+            </div> */}
           </main>
           <Footer />
         </div>

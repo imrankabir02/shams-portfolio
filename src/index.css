@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap");
+@import url('https://fonts.maateen.me/bangla/font.css');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +7,7 @@
 
 :root {
   font-family: "Georgia", serif;
+  font-family: "Bangla", serif;
 }
 
 html {
