@@ -2,27 +2,43 @@ import project1 from "../assets/projects/bookStore.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
-import shamsImage from "../assets/picsvg.svg"
+import shamsImage from "../assets/picsvg.svg";
 
 export const NAV_ITEMS = [
-  'About', 
-  'Skills', 
-  'Projects', 
-  'Experience', 
-  'Educations',
+  "About",
+  "Skills",
+  "Projects",
+  "Experience",
+  "Educations",
   // 'Contact Me'
 ];
 
-
-
 export const MY_DETAILS = {
-  name: "Shams Mahmud",
-  title: "B.Sc in CSE",
-  company: "Khulna University",
+  name: "Engineer Shams Mahmud",
+  edu: [
+    {
+      title: "B.Sc and M.Sc in CSE",
+      eduPlace: "Khulna University",
+    },
+  ],
   email: "info.shamsbd@gmail.com",
   phoneNo: "+880 1682 705 119",
   address: "M.A Bari St, Sonadanga, Khulna",
-  image: shamsImage
+  image: shamsImage,
+  works: [
+    {
+      pos: "Director",
+      comp: "OPTIMUS",
+    },
+    {
+      pos: "Senior Teacher",
+      comp: "Sunrise",
+    },
+    {
+      pos: "Lecturer",
+      comp: "Northern University",
+    },
+  ],
 };
 
 // export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;

@@ -6,17 +6,17 @@ import { SiFacebook } from "react-icons/si";
 const Hero = () => {
     return (
         <div className="py-12 bg-gradient-to-br from-slate-50 via-white to-slate-50">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="px-4 mx-auto max-w-7xl">
                 <div className="relative">
                     {/* Background Decorative Elements */}
-                    <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
-                    <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
+                    <div className="absolute bg-blue-100 rounded-full -top-4 -right-4 w-72 h-72 blur-3xl opacity-20"></div>
+                    <div className="absolute rounded-full -bottom-4 -left-4 w-72 h-72 bg-rose-100 blur-3xl opacity-20"></div>
 
                     {/* Main Content */}
-                    <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
-                        <div className="flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-12">
+                    <div className="relative overflow-hidden border border-gray-100 shadow-xl bg-white/70 backdrop-blur-lg rounded-3xl">
+                        <div className="flex flex-col items-center gap-12 p-8 lg:flex-row lg:p-12">
                             {/* Profile Image Section */}
-                            <div className="lg:w-1/3 relative">
+                            <div className="relative lg:w-1/3">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-rose-500/10 rounded-2xl"></div>
                                 <img
                                     src={MY_DETAILS.image}
@@ -26,25 +26,24 @@ const Hero = () => {
                             </div>
 
                             {/* Content Section */}
-                            <div className="lg:w-2/3 space-y-8">
+                            <div className="space-y-8 lg:w-2/3">
                                 {/* Bengali Quote */}
-                                <div className="space-y-2 bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl">
-                                    <h2 className="text-2xl lg:text-3xl font-medium bg-gradient-to-r from-rose-600 to-red-600 bg-clip-text text-transparent">
+                                <div className="p-6 space-y-2 bg-gradient-to-r from-gray-50 to-white rounded-xl">
+                                    <h2 className="text-2xl font-medium text-transparent lg:text-3xl bg-gradient-to-r from-rose-600 to-red-600 bg-clip-text">
                                         পড়াকে মুখস্থ নয়,
                                     </h2>
-                                    <h2 className="text-2xl lg:text-3xl font-medium bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                                    <h2 className="text-2xl font-medium text-transparent lg:text-3xl bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text">
                                         বুঝে আত্মস্থ করতে হবে
                                     </h2>
                                 </div>
 
                                 {/* Name and Title */}
                                 <div className="space-y-3">
-                                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight">
+                                    <h1 className="text-4xl font-bold tracking-tight text-gray-800 lg:text-5xl">
                                         {MY_DETAILS.name}
                                     </h1>
-                                    <div className="space-y-1">
-                                        <p className="text-xl text-gray-700">{MY_DETAILS.title}</p>
-                                        <p className="text-lg text-gray-600">{MY_DETAILS.company}</p>
+                                    <div className="">
+                                        <p className="text-2xl text-gray-700">{MY_DETAILS.title} <span className="text-2xl text-gray-600">{MY_DETAILS.company}</span></p>
                                     </div>
                                 </div>
 
@@ -52,24 +51,24 @@ const Hero = () => {
                                 <div className="flex flex-col gap-4">
                                     <a
                                         href={`mailto:${MY_DETAILS.email}`}
-                                        className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors group"
+                                        className="flex items-center gap-3 text-gray-600 transition-colors hover:text-blue-600 group"
                                     >
-                                        <span className="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                                        <span className="p-2 transition-colors rounded-lg bg-blue-50 group-hover:bg-blue-100">
                                             <MdOutlineMailOutline className="text-xl" />
                                         </span>
                                         {MY_DETAILS.email}
                                     </a>
                                     <a
                                         href={`tel:${MY_DETAILS.phoneNo}`}
-                                        className="flex items-center gap-3 text-gray-600 hover:text-green-600 transition-colors group"
+                                        className="flex items-center gap-3 text-gray-600 transition-colors hover:text-green-600 group"
                                     >
-                                        <span className="p-2 bg-green-50 rounded-lg group-hover:bg-green-100 transition-colors">
+                                        <span className="p-2 transition-colors rounded-lg bg-green-50 group-hover:bg-green-100">
                                             <MdPhone className="text-xl" />
                                         </span>
                                         {MY_DETAILS.phoneNo}
                                     </a>
                                     {/* <div className="flex items-center gap-3 text-gray-600 group">
-                                        <span className="p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100 transition-colors">
+                                        <span className="p-2 transition-colors rounded-lg bg-orange-50 group-hover:bg-orange-100">
                                             <FaLocationDot className="text-xl" />
                                         </span>
                                         {MY_DETAILS.address}
