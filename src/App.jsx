@@ -7,7 +7,8 @@ import Educations from "./Components/Educations"
 import Footer from "./Components/Footer"
 import Projects from "./Components/Projects"
 import Moto from "./Components/Moto"
-import Course from "./Components/Course"
+import Courses from "./Components/Courses"
+
 
 const App = () => {
   return (
@@ -25,8 +26,8 @@ const App = () => {
             {/* <div id="about">
               <About />
             </div> */}
-            <div id="skills">
-              <Course />
+            <div id="">
+              <Courses />
             </div>
             {/* <div id="projects">
               <Projects />

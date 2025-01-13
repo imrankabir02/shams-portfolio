@@ -20,6 +20,14 @@ export const MY_DETAILS = {
       title: "B.Sc and M.Sc in CSE",
       eduPlace: "Khulna University",
     },
+    {
+      title: "Ex:",
+      eduPlace: "St. Joseph\'s High School, Khulna",
+    },
+    {
+      title: "Ex:",
+      eduPlace: "Govt. M.M. City College, Khulna",
+    },
   ],
   email: "info.shamsbd@gmail.com",
   phoneNo: "+880 1682 705 119",
