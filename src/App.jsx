@@ -12,7 +12,7 @@ import Courses from "./Components/Courses"
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden antialiased bg-neutral-50 text-neutral-800">
+    <div className="overflow-x-hidden antialiased bg-white text-neutral-800 h-full shadow-2xl">
       {/* Content wrapper with glass effect */}
       <div className="relative min-h-screen">
         {/* Main content */}
